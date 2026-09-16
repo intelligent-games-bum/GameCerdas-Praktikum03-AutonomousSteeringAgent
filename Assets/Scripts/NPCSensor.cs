@@ -24,6 +24,7 @@ public class NPCSensor : MonoBehaviour
 
     public bool CanSeePlayer => canSeePlayer;
     public float DistanceToPlayer => currentDistance;
+    public Transform Player => player;
     public Vector3 PlayerPosition => player != null ? player.position : transform.position;
 
     private void Start()
